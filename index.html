@@ -8,9 +8,68 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<h1>Formuláře</h1>
 
-		<h1>Formuláře</h1>
+	<form action="" id="formular" >	<!--action - kam sa posiela methoda / post get - akym sposobom sa to odosiela na server get je vidiet v adrese (url), post je skryty -->
+		
+		<div class="form-policko">
+			<label for="meno"> Meno</label>	<!-- for a id je prepojene -->
+			<input id="meno" type="text" placeholder="Napis meno" maxlength="10" >		<!-- placeholder - je to iba napoveda, ked nieco napisem tak zmizne, najlepsie pri cislach napr kariet -->
+		</div>
 
+
+		<div class="form-policko">
+			<label for="priezvisko"> Priezvisko</label>	
+			<input id="priezvisko" type="text">		
+		</div>
+
+
+		<div class="form-policko">
+			<label for="Vek"> Vek</label>	
+			<input id="Vek" type="number" max="120" min="20" step="10">		
+		</div>
+
+
+		<div class="form-policko">
+			<label for="Mail"> E-mail</label>	
+			<input id="Mail" type="email">		
+		</div>
+
+		<div class="form-policko">
+			<label for="datum"> Datum</label>	
+			<input id="datum" type="datetime-local">
+		</div>		
+
+		<div class="form-policko">
+			<label for="farba"> Farba</label>	
+			<input id="farba" type="color">		
+		</div>
+
+		<div class="form-policko">
+			<label for="adresa"> Adresa</label>	
+			<textarea  id="adresa" cols="25" rows="3" ></textarea>		<!-- textove pole s viacerymi riadkami -->
+		</div>
+
+
+		<div class="form-policko">
+			<label for="mesto"> Mesto</label>	
+			<select  id="mesto">		<!-- mame na vyber -->
+				<option></option>
+				<option> Praha</option>
+				<option> Brno</option>
+				<option selected> Bratislava</option> <!-- selected = predvyplneny prvok -->
+			</select>	
+		</div>
+
+		<div class="form-zaskrtavacie">
+			<input id="suhlas" type="checkbox">	<label for="suhlas"> Suhlasim s kradezou osobnych udajov</label>	
+				
+		</div>
+
+		<button>OK</button>
+
+
+	</form>
 
 
 		<script src="main.js"></script>
